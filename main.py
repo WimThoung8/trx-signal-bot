@@ -7,8 +7,6 @@ import string
 from telegram.ext import Updater, CommandHandler, CallbackContext
 from telegram import Update
 
-
-
 # ===== CONFIG =====
 BOT_TOKEN = "8409859323:AAE3roaqVk3ZGMfokA_KXYJRwa5fklrMa9o"
 API_URL = "https://api.bigwinqaz.com/api/webapi/GetTRXGameIssue"
@@ -94,12 +92,9 @@ def start(update: Update, context: CallbackContext):
 def main():
     updater = Updater(BOT_TOKEN, use_context=True)
     dp = updater.dispatcher
-
     dp.add_handler(CommandHandler("start", start))
-
     updater.start_polling()
     updater.idle()
 
 if __name__ == "__main__":
     main()
-
