@@ -12,8 +12,6 @@ from telegram import Update
 BOT_TOKEN = "8409859323:AAE3roaqVk3ZGMfokA_KXYJRwa5fklrMa9o"
 API_URL = "https://api.bigwinqaz.com/api/webapi/GetTRXGameIssue"
 
-bot = Bot(token=BOT_TOKEN)
-
 # ===== API HELPER =====
 def generate_signature(random_str, timestamp):
     s = random_str + str(timestamp)
